@@ -1,0 +1,33 @@
+{
+    "status":"",
+    "error":false,
+    "tasks":[{
+        "status":"Выполняется",
+        "id":192,
+        "title":"Полить цветы",
+        "firstMessage":{
+            "priorityId":0,
+            "date":1388482,
+            "text":"Полить цветы в офисе",
+            "spendedTime": 142,
+            "planTime": 523,
+            "authorUid":"petrov-vm@dartit.ru",
+            "taskStatus":"1",
+            "endDate":34412423,
+            "id":2341,
+            "userUid": "petrov-vm@dartit.ru"
+        },
+        "lastMessage":{
+            "priorityId":0,
+            "date":1388482,
+            "text":"Полить цветы в офисе",
+            "spendedTime": 142,
+            "planTime": 523,
+            "authorUid":"petrov-vm@dartit.ru",
+            "taskStatus":"1",
+            "endDate":34412423,
+            "id":2341,
+            "userUid": "petrov-vm@dartit.ru"
+        }
+    }]
+}

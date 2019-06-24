@@ -11,10 +11,14 @@ public func routes(_ router: Router) throws {
     let basic = router.grouped(User.basicAuthMiddleware(using: BCryptDigest()))
     basic.post("login", use: userController.login)
     
-    // bearer / token auth protected routes
-    let bearer = router.grouped(User.tokenAuthMiddleware())
-    let todoController = TodoController()
-    bearer.get("todos", use: todoController.index)
-    bearer.post("todos", use: todoController.create)
-    bearer.delete("todos", Todo.parameter, use: todoController.delete)
+    let workerController = WorkersController()
+    
+    basic.post("worker", use: workerController.create)
+    basic.get("workers/list", use: workerController.index)
+    
+    basic.get("task/list") { (req) -> Tasks in
+        return TasksCreater().createTasks()
+    }
+    
+
 }

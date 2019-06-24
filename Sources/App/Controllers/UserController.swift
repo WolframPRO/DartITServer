@@ -35,6 +35,7 @@ final class UserController {
             return try UserResponse(id: user.requireID(), name: user.name, email: user.email)
         }
     }
+    
 }
 
 // MARK: Content
