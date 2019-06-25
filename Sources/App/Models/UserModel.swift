@@ -8,7 +8,7 @@
 import FluentSQLite
 import Vapor
 
-struct UserModel: SQLiteModel, Codable {
+struct UserModel: SQLiteModel {
     var id: Int?
     var uid: String?
     var name: String?

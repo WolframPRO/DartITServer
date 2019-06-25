@@ -11,7 +11,7 @@ import Vapor
 struct Tasks: Content {
     var tasks: [OneTaskModel]
 }
-struct OneTaskModel: Codable {
+struct OneTaskModel: Content {
     var status: String
     var id: Int?
     var title: String
@@ -19,7 +19,7 @@ struct OneTaskModel: Codable {
     var lastMessage: Message
 }
 
-struct Message: Codable {
+struct Message: Content {
     var priorityId:Int?
     var date: Int?
     var text: String?
